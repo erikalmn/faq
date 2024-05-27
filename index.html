@@ -30,7 +30,7 @@
                 <div class="headline">Como faço para acessar o Portal do Aluno?</div>
                 <div class="subhead">Portal do Aluno</div>
                 <p>Orientações para acessar o Portal do Aluno da faculdade.</p>
-                <button>Visualizar</button>
+                <button class="open-modal" data-modal-target="#modal-portal">Visualizar</button>
             </div>
             <div class="card">
                 <div class="headline">Como posso realizar a matrícula online?</div>
@@ -62,8 +62,46 @@
                 <p>Como contatar a coordenação do curso via e-mail, telefone ou presencialmente.</p>
                 <button>Visualizar</button>
             </div>
+
+            <div id="modal-portal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div>Como faço para acessar o Portal do Aluno?</div>
+                        <button class="close-modal">&times;</button>
+                    </div>
+                    <div class="modal-message">
+                        <div class="step">
+                            <img src="./assets/img/icon_1.svg" width="35" height="35" alt="Número 1">
+                            <div>Acesse a página inicial da Faculdade Multiversa de acordo com o campus ao qual você pertence.</div>
+                        </div>
+                        <div class="step">
+                            <img src="./assets/img/icon_2.svg" width="35" height="35" alt="Número 2">
+                            <div>Na página inicial, procure a opção "Área do Aluno" no menu principal. Clique nela para acessar.</div>
+                        </div>
+                        
+                        <img src="assets/img/image_1.png" height="120" class="modal-image" alt="">
+
+                        <div class="step">
+                            <img src="./assets/img/icon_3.svg" width="35" height="35" alt="Número 3">
+                            <div>Após isso, você será solicitado a selecionar sua unidade e curso.</div>
+                        </div>
+
+                        <img src="assets/img/image_2.png" height="140" class="modal-image" alt="">
+
+                        <div class="step">
+                            <img src="./assets/img/icon_4.svg" width="35" height="35" alt="Número 4">
+                            <div>Você será redirecionado para a tela de login, onde poderá inserir suas credenciais de acesso.</div>
+                        </div>
+                    </div>
+                    <div class="modal-buttons">
+                        <button class="close-modal">Entendi</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
