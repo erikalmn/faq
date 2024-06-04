@@ -54,9 +54,15 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    width: none;
     margin: auto;
     padding: 1.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 80%;
+    }
 }
 
 .card {
@@ -107,9 +113,9 @@ nav {
     align-self: flex-start;
 }
 
-/* .card button:hover {
-    background-color: #b49600;
-} */
+.card button:hover {
+    background-color: #FFDB28;
+}
 
 .modal {
     display: none;
@@ -129,7 +135,7 @@ nav {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
@@ -141,15 +147,28 @@ nav {
     max-width: 500px;
 }
 
+@media screen and (min-width: 1024px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
 .modal-header {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     padding: .625rem .625rem;
     border-bottom: 1px solid #dee2e6;
     border-top-left-radius: calc(0.3rem - 1px);
     border-top-right-radius: calc(0.3rem - 1px);
     font-weight: 600;
+    font-size: .8rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .modal-header {
+        font-size: 1rem;
+    }
 }
 
 .modal-header button {
@@ -175,11 +194,17 @@ nav {
 }
 
 .step {
-    font-size: .875rem;
+    font-size: .7rem;
     display: flex;
     align-items: center;
     text-align: justify;
     padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .step {
+        font-size: .875rem;
+    }
 }
 
 .step img {
@@ -213,5 +238,5 @@ nav {
 }
 
 .modal-buttons button:hover {
-    background-color: #0056b3;
+    background-color: #0056B3;
 }
