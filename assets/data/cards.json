@@ -1,0 +1,38 @@
+[
+    {
+        "headline": "Como faço para acessar o Portal do Aluno?",
+        "subhead": "Portal do Aluno",
+        "description": "Orientações para acessar o Portal do Aluno da faculdade.",
+        "modal_target": "#modal-portal"
+    },
+    {
+        "headline": "Como posso realizar a matrícula online?",
+        "subhead": "Matrícula Online",
+        "description": "Ajuda para realizar a matrícula online, do preenchimento à confirmação.",
+        "modal_target": "#modal-matricula"
+    },
+    {
+        "headline": "Como recuperar a senha do meu e-mail institucional?",
+        "subhead": "E-mail Institucional",
+        "description": "Passos para recuperar a senha do seu e-mail institucional.",
+        "modal_target": "#modal-email"
+    },
+    {
+        "headline": "Quais os critérios para solicitar uma bolsa de estudos?",
+        "subhead": "Bolsas de Estudo",
+        "description": "Informações sobre elegibilidade e solicitação de bolsas de estudo.",
+        "modal_target": "#modal-bolsas"
+    },
+    {
+        "headline": "Como acessar a biblioteca virtual?",
+        "subhead": "Biblioteca Virtual",
+        "description": "Guia para acessar a biblioteca virtual e consultar materiais acadêmicos.",
+        "modal_target": "#modal-biblioteca"
+    },
+    {
+        "headline": "Como entrar em contato com a coordenação do curso?",
+        "subhead": "Coordenação de Curso",
+        "description": "Como contatar a coordenação do curso via e-mail, telefone ou presencialmente.",
+        "modal_target": "#modal-coordenacao"
+    }
+]

@@ -9,93 +9,101 @@
     <link rel="icon" href="http://example.com/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 </head>
 
 <body>
     <nav>
         <div class="navbar">
             <div class="logo">
-                <img src="./assets/img/logo.png" width="160" height="30" alt="Logo da Multiversa">
+                <a href="https://multiversa.edu.br/" target="_blank">
+                    <img src="./assets/img/logo.png" width="160" height="30" alt="Logo da Multiversa">
+                </a>
             </div>
         </div>
     </nav>
 
     <div class="content">
         <span>Como podemos ajudar?</span>
-        <div class="container">
-            <div class="card">
-                <div class="headline">Como faço para acessar o Portal do Aluno?</div>
-                <div class="subhead">Portal do Aluno</div>
-                <p>Orientações para acessar o Portal do Aluno da faculdade.</p>
-                <button class="open-modal" data-modal-target="#modal-portal">Visualizar</button>
-            </div>
-            <div class="card">
-                <div class="headline">Como posso realizar a matrícula online?</div>
-                <div class="subhead">Matrícula Online</div>
-                <p>Ajuda para realizar a matrícula online, do preenchimento à confirmação.</p>
-                <button>Visualizar</button>
-            </div>
-            <div class="card">
-                <div class="headline">Como recuperar a senha do meu e-mail institucional?</div>
-                <div class="subhead">E-mail Institucional</div>
-                <p>Passos para recuperar a senha do seu e-mail institucional.</p>
-                <button>Visualizar</button>
-            </div>
-            <div class="card">
-                <div class="headline">Quais os critérios para solicitar uma bolsa de estudos?</div>
-                <div class="subhead">Bolsas de Estudo</div>
-                <p>Informações sobre elegibilidade e solicitação de bolsas de estudo.</p>
-                <button>Visualizar</button>
-            </div>
-            <div class="card">
-                <div class="headline">Como acessar a biblioteca virtual?</div>
-                <div class="subhead">Biblioteca Virtual</div>
-                <p>Guia para acessar a biblioteca virtual e consultar materiais acadêmicos.</p>
-                <button>Visualizar</button>
-            </div>
-            <div class="card">
-                <div class="headline">Como entrar em contato com a coordenação do curso?</div>
-                <div class="subhead">Coordenação de Curso</div>
-                <p>Como contatar a coordenação do curso via e-mail, telefone ou presencialmente.</p>
-                <button>Visualizar</button>
-            </div>
+        <div class="stripe"></div>
+        <img src="assets/img/background.png" alt="" class="stripe-image">
+        <div id="cards-container" class="container"></div>
 
-            <div id="modal-portal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div>Como faço para acessar o Portal do Aluno?</div>
-                        <button class="close-modal">&times;</button>
+        <div id="modal-portal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>Como faço para acessar o Portal do Aluno?</div>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-message">
+                    <div class="step">
+                        <img src="./assets/img/icon_1.svg" width="35" height="35" alt="Número 1">
+                        <div>Acesse a página inicial da Faculdade Multiversa de acordo com o campus ao qual você
+                            pertence.</div>
                     </div>
-                    <div class="modal-message">
-                        <div class="step">
-                            <img src="./assets/img/icon_1.svg" width="35" height="35" alt="Número 1">
-                            <div>Acesse a página inicial da Faculdade Multiversa de acordo com o campus ao qual você pertence.</div>
-                        </div>
-                        <div class="step">
-                            <img src="./assets/img/icon_2.svg" width="35" height="35" alt="Número 2">
-                            <div>Na página inicial, procure a opção "Área do Aluno" no menu principal. Clique nela para acessar.</div>
-                        </div>
-                        
-                        <img src="assets/img/image_1.png" height="120" class="modal-image" alt="">
-
-                        <div class="step">
-                            <img src="./assets/img/icon_3.svg" width="35" height="35" alt="Número 3">
-                            <div>Após isso, você será solicitado a selecionar sua unidade e curso.</div>
-                        </div>
-
-                        <img src="assets/img/image_2.png" height="140" class="modal-image" alt="">
-
-                        <div class="step">
-                            <img src="./assets/img/icon_4.svg" width="35" height="35" alt="Número 4">
-                            <div>Você será redirecionado para a tela de login, onde poderá inserir suas credenciais de acesso.</div>
-                        </div>
+                    <div class="step">
+                        <img src="./assets/img/icon_2.svg" width="35" height="35" alt="Número 2">
+                        <div>Na página inicial, procure a opção "Área do Aluno" no menu principal. Clique nela para
+                            acessar.</div>
                     </div>
-                    <div class="modal-buttons">
-                        <button class="close-modal">Entendi</button>
+
+                    <img src="assets/img/image_1.png" height="120" class="modal-image" alt="">
+
+                    <div class="step">
+                        <img src="./assets/img/icon_3.svg" width="35" height="35" alt="Número 3">
+                        <div>Após isso, você será solicitado a selecionar sua unidade e curso.</div>
                     </div>
+
+                    <img src="assets/img/image_2.png" height="140" class="modal-image" alt="">
+
+                    <div class="step">
+                        <img src="./assets/img/icon_4.svg" width="35" height="35" alt="Número 4">
+                        <div>Você será redirecionado para a tela de login, onde poderá inserir suas credenciais de
+                            acesso.</div>
+                    </div>
+                </div>
+                <div class="modal-buttons">
+                    <button class="close-modal">Entendi</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-matricula" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>Como posso realizar a matrícula online?</div>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-message">
+                    <div class="step">
+                        <img src="./assets/img/icon_1.svg" width="35" height="35" alt="Número 1">
+                        <div>Acesse a página inicial da Faculdade Multiversa, digitando o endereço no seu navegador
+                            de internet.</div>
+                    </div>
+                    <div class="step">
+                        <img src="./assets/img/icon_2.svg" width="35" height="35" alt="Número 2">
+                        <div>No menu principal do site, procure pela opção "Matrícula" e clique nela.</div>
+                    </div>
+
+                    <img src="assets/img/image_3.png" height="120" class="modal-image" alt="">
+
+                    <div class="step">
+                        <img src="./assets/img/icon_3.svg" width="35" height="35" alt="Número 3">
+                        <div>Siga as instruções na tela e preencha o formulário de matrícula com todas as
+                            informações solicitadas.</div>
+                    </div>
+
+                    <img src="assets/img/image_4.png" height="120" class="modal-image" alt="">
+
+                    <div class="step">
+                        <img src="./assets/img/icon_4.svg" width="35" height="35" alt="Número 4">
+                        <div>Revise suas informações e clique no botão de "Finalizar Matrícula". Após isso, receberá
+                            uma confirmação por e-mail.</div>
+                    </div>
+                </div>
+                <div class="modal-buttons">
+                    <button class="close-modal">Entendi</button>
                 </div>
             </div>
         </div>
